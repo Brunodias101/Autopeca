@@ -3,6 +3,6 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/autopeca
+    url: jdbc:mysql://localhost:3306/autopeca?createDatabaseIfNotExist=true
     username: bruno
     password: bruno101
