@@ -3,13 +3,9 @@ package com.autopeca.autopeca;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
 import org.springframework.data.annotation.Id;
 
-import javax.annotation.processing.Generated;
-
-@jakarta.persistence.Entity
-@Table(name ="autopeca")
+@javax.persistence.Entity
 public class Entity {
 
 
