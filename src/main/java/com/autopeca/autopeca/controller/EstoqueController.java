@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "autopeca")
 public class EstoqueController {
 
-
+    @Autowired
     private EstoqueService estoqueService;
 
     @GetMapping
