@@ -1,17 +1,19 @@
-package com.autopeca.autopeca;
+package com.autopeca.autopeca.entity;
 
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
 import org.springframework.data.annotation.Id;
 
 @javax.persistence.Entity
+@Table(name= "autopeca")
 public class Entity {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int id;
+    public long idEstoque;
 
     public String nome;
 
