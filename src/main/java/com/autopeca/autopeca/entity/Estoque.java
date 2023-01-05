@@ -1,28 +1,32 @@
 package com.autopeca.autopeca.entity;
 
 
+import com.autopeca.autopeca.enums.ProdutoStatus;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 import org.springframework.data.annotation.Id;
 
 @javax.persistence.Entity
-@Table(name= "autopeca")
-public class Entity {
+@Table(name= "tbEstoque")
+public class Estoque {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long idEstoque;
+    public long id;
 
     public String nome;
 
     public String descricao;
 
-    public int preco;
+    public Double preco;
 
-    public String status;
+    public ProdutoStatus status;
 
+    public long getId() {
+        return id;
+    }
 
     public String getNome() {
         return nome;
@@ -40,19 +44,19 @@ public class Entity {
         this.descricao = descricao;
     }
 
-    public int getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(int preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 
-    public String getStatus() {
+    public ProdutoStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(ProdutoStatus status) {
         this.status = status;
     }
 }
